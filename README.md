@@ -1,24 +1,67 @@
-# Project_2_PCOS
- PCOS preditictions and vizualizations in Tableau
- 
-Dataset source : Kaggle
-2 dataframes 
-1 - with pcos patients named "PCOS_data_without_infertility_new" 
-2 - with infertility patient information with less variables named "pcos_infertility
-I realized these were the same patients with different values on some features and less features in the pcos_infertility
+Project_2_PCOS Readme
 
-Goal:
-1 - Determine the correlation between having infertility and pcos - tableau data analysis:
-	- Hypothesis null no relation; 
-	- hypothesis 1: having positive or negative relation 
-2 - Do correlations to check which variables are more important in diagnosing pcos 
-3 - Select the best model to give me the highest recall value and the less false negatives, being, finding more true positives with pcos. 
+Introduction
 
-After doing all the EDA and Modeling testing I got the most correlated features, since my data was very imbalanced I did a oversamplling using SMOTE and then I used logistic regression to predict the values. 
+This repository contains the code and documentation for Project_2_PCOS, focused on predicting Polycystic Ovary Syndrome (PCOS) and visualizing the results in Tableau. The dataset is obtained from Kaggle and consists of two dataframes: one for PCOS patients named "PCOS_data_without_infertility_new" and another for infertility patient information with fewer variables named "pcos_infertility."
 
-I also tested using KNN model but the recall value was inferior. 
 
-At the end of my data analysis I created a final dataframe with more features beacuse I wanted to visualize them on tableau. 
+
+Goals
+
+
+Goal 1: Determine the correlation between infertility and PCOS
+
+- Tableau Visualization:
+
+		- Create a Tableau dashboard showcasing patient information, emphasizing PCOS and infertility cases.
+		- Utilize dynamic filters for exploring data based on different parameters.
+
+- Statistical Analysis:
+
+		- Conduct statistical tests (e.g., chi-square test) to assess the association between PCOS and infertility.
+		- Visualize the correlation matrix between PCOS and infertility using Tableau.
+
+
+
+
+Goal 2: Identify important variables in diagnosing PCOS
+
+
+- Tableau Visualization:
+
+		- Develop visualizations in Tableau (e.g., correlation plots, box plots) to identify variables strongly correlated with 		PCOS.
+		- Use histograms to illustrate the distribution of important variables.
+
+- Feature Importance:
+
+		- Apply machine learning models with feature importance outputs (e.g., logistic regression coefficients) to identify 			crucial variables.
+
+
+
+
+Goal 3: Select the best model for PCOS prediction
+
+
+- Tableau Visualization:
+
+		- Construct a Tableau dashboard presenting model evaluation metrics (e.g., recall, precision, F1-score) for different 			models.
+
+- Model Evaluation:
+
+		- Evaluate multiple models (e.g., logistic regression, KNN) using relevant metrics.
+		- Choose the model with the highest recall, considering the imbalanced nature of the data.
+
+
+Final DataFrame and Tableau Visualization
+
+ - Tableau Dashboard:
+
+		- Integrate the final dataframe into Tableau for comprehensive visualization.
+		- Develop interactive dashboards allowing users to explore various features and their relationships.
+		Storytelling:
+
+
+
 
 
 
